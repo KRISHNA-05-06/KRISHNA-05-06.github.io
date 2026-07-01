@@ -70,6 +70,7 @@
   .navtoggle { display:none; align-items:center; justify-content:center; }
   @media (max-width: 759px) {
     .navtoggle { display:inline-flex; }
+    .navstatus { display:none !important; }
     .navwrap { position:absolute; top:100%; left:0; right:0; flex-direction:column; gap:0 !important; background:var(--nav-bg-2); backdrop-filter:blur(12px); border-bottom:1px solid var(--divider); padding:6px 16px 14px; display:none; z-index:60; }
     .navwrap.open { display:flex; }
     .navwrap a { padding:12px 4px; }
@@ -125,7 +126,7 @@
         <span style="font-size:10px; line-height:1; color:var(--faint-2);">☾</span>
         <span style="{{ knobStyle }}"></span>
       </button>
-      <div style="display:flex; align-items:center; gap:10px; font-family:'JetBrains Mono',monospace; font-size:11.5px; color:var(--faint);">
+      <div class="navstatus" style="display:flex; align-items:center; gap:10px; font-family:'JetBrains Mono',monospace; font-size:11.5px; color:var(--faint);">
         <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background:var(--accent); box-shadow:0 0 10px var(--accent);"></span>
         <span style="color:var(--muted);">RUNNING</span>
         <span style="color:var(--faint-3);">·</span>
@@ -380,14 +381,14 @@
           <h2 style="margin:0; font-size:clamp(28px,4vw,44px); font-weight:700; letter-spacing:-0.02em;">Let's move some data<span style="color:var(--accent);">.</span></h2>
           <p style="margin:16px 0 0; font-size:16px; line-height:1.6; color:var(--muted); max-width:420px;">Open to Data Engineer roles. If you need pipelines that stay trustworthy at scale, the connection's already open.</p>
           <div style="display:flex; flex-wrap:wrap; gap:12px; margin-top:28px;">
-            <a href="/cdn-cgi/l/email-protection#295a5b40425b405a4147485a484042465d4818694e44484045074a4644" class="btn" style="display:inline-flex; align-items:center; gap:9px; font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:600; padding:13px 20px; border-radius:10px; background:var(--accent); color:var(--accent-ink); border:1px solid var(--accent);">✉ email_me()</a>
+            <a href="/cdn-cgi/l/email-protection#2457564d4f564d574c4a4557454d4f4b504515644349454d480a474b49" class="btn" style="display:inline-flex; align-items:center; gap:9px; font-family:'JetBrains Mono',monospace; font-size:13px; font-weight:600; padding:13px 20px; border-radius:10px; background:var(--accent); color:var(--accent-ink); border:1px solid var(--accent);">✉ email_me()</a>
             <a href="https://github.com/KRISHNA-05-06/Data-Engineer-Projects" target="_blank" class="btn" style="display:inline-flex; align-items:center; gap:9px; font-family:'JetBrains Mono',monospace; font-size:13px; padding:13px 20px; border-radius:10px; background:transparent; color:var(--text-2); border:1px solid var(--border-strong);">↗ GitHub</a>
             <a href="https://www.linkedin.com/in/srikrishnasai/" target="_blank" class="btn" style="display:inline-flex; align-items:center; gap:9px; font-family:'JetBrains Mono',monospace; font-size:13px; padding:13px 20px; border-radius:10px; background:transparent; color:var(--text-2); border:1px solid var(--border-strong);">↗ LinkedIn</a>
           </div>
         </div>
         <div style="font-family:'JetBrains Mono',monospace; font-size:13px; line-height:2; background:var(--inset); border:1px solid var(--divider); border-radius:12px; padding:22px 24px;">
           <div style="color:var(--faint-3);">{</div>
-          <div style="padding-left:20px;"><span style="color:var(--accent2);">"email"</span><span style="color:var(--faint-3);">:</span> <a href="/cdn-cgi/l/email-protection#a8dbdac1c3dac1dbc0c6c9dbc9c1c3c7dcc999e8cfc5c9c1c486cbc7c5" style="color:var(--accent);">"<span class="__cf_email__" data-cfemail="5a2928333128332932343b293b3331352e3b6b1a3d373b333674393537">[email&#160;protected]</span>"</a><span style="color:var(--faint-3);">,</span></div>
+          <div style="padding-left:20px;"><span style="color:var(--accent2);">"email"</span><span style="color:var(--faint-3);">:</span> <a href="/cdn-cgi/l/email-protection#c8bbbaa1a3baa1bba0a6a9bba9a1a3a7bca9f988afa5a9a1a4e6aba7a5" style="color:var(--accent);">"<span class="__cf_email__" data-cfemail="cab9b8a3a1b8a3b9a2a4abb9aba3a1a5beabfb8aada7aba3a6e4a9a5a7">[email&#160;protected]</span>"</a><span style="color:var(--faint-3);">,</span></div>
           <div style="padding-left:20px;"><span style="color:var(--accent2);">"phone"</span><span style="color:var(--faint-3);">:</span> <a href="tel:8135094528" style="color:var(--text-3);">"813-509-4528"</a><span style="color:var(--faint-3);">,</span></div>
           <div style="padding-left:20px;"><span style="color:var(--accent2);">"location"</span><span style="color:var(--faint-3);">:</span> <span style="color:var(--text-3);">"Tampa, FL"</span><span style="color:var(--faint-3);">,</span></div>
           <div style="padding-left:20px;"><span style="color:var(--accent2);">"github"</span><span style="color:var(--faint-3);">:</span> <a href="https://github.com/KRISHNA-05-06/Data-Engineer-Projects" target="_blank" style="color:var(--accent);">"KRISHNA-05-06/Data-Engineer-Projects"</a><span style="color:var(--faint-3);">,</span></div>
